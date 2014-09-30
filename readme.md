@@ -5,7 +5,7 @@ up-to-date image ids that share the same attributes (architecture, virtualizatio
 
 ## Setup
 ```sh
-$ git clone git@github.com:mapbox/update-amis.js
+$ git clone git@github.com:mapbox/update-amis
 $ cd update-amis
 $ npm install -g
 ```
