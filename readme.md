@@ -12,3 +12,11 @@ $ cat path/to/some-template.template | update-amis
 # Updates named file
 $ update-amis path/to/some-template.template
 ```
+
+### Caveats
+Finds a matching AMI based on:
+- architecture
+- owner
+- root-device type
+- virtualization type
+- name: ubuntu names their amis predictably, so that you can match ubuntu versions and find the most up-to-date. Example: `ubuntu/images/ubuntu-trusty-14.04-amd64-server-20140927`
