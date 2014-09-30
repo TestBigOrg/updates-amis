@@ -3,8 +3,14 @@
 Give a string or file with some ubuntu EC2 image ids in it, replace them with the most
 up-to-date image ids that share the same attributes (architecture, virtualization type, etc.)
 
-Setup with `npm install -g`
+## Setup
+```sh
+$ git clone git@github.com:mapbox/update-amis.js
+$ cd update-amis
+$ npm install -g
+```
 
+## Usage
 ```sh
 # Prints to stdout
 $ cat path/to/some-template.template | update-amis
@@ -13,7 +19,7 @@ $ cat path/to/some-template.template | update-amis
 $ update-amis path/to/some-template.template
 ```
 
-### Caveats
+## Caveats
 Finds a matching AMI based on:
 - architecture
 - owner
