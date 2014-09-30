@@ -73,7 +73,7 @@ function Finder() {
             }, function(err, data) {
                 if (err) return callback(err);
 
-                // Kinda chinsy that in the end we have to rely on naming conventions
+                // Kinda chintzy that in the end we have to rely on naming conventions
                 var searchFor = info.Name.slice(0, info.Name.lastIndexOf('-'));
 
                 var newami = _(data.Images).chain()
