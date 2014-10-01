@@ -7,13 +7,14 @@ var finder = require('../finder');
 var queue = require('queue-async');
 var _ = require('underscore');
 
+var amiRegex = /ami-[a-z0-9]{8}/g;
+
 var replace = through2(function(chunk, enc, callback) {
     var data = chunk.toString();
-    var re = /ami-[a-z0-9]{8}/g;
     var m, amis = [];
     var replacer = this;
 
-    while (m = re.exec(chunk)) { amis.push(m[0]); }
+    while (m = amiRegex.exec(chunk)) { amis.push(m[0]); }
 
     var q = queue();
     _(amis).uniq().forEach(function(oldami) {
@@ -35,7 +36,12 @@ var replace = through2(function(chunk, enc, callback) {
 
 var input, filepath, buf = new Buffer(0);
 
-if (process.argv[2]) {
+if (process.argv[2] && amiRegex.exec(process.argv[2])) {
+    return finder.findUpdatedAmi(process.argv[2], function(err, newami) {
+        if (err) throw err;
+        console.log(newami);
+    });
+} else if (process.argv[2]) {
     filepath = path.resolve(process.argv[2]);
     input = fs.createReadStream(filepath);
 } else {

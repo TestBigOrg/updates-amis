@@ -17,6 +17,9 @@ $ cat path/to/some-template.template | update-amis
 
 # Updates named file
 $ update-amis path/to/some-template.template
+
+# Just prints an up-to-date ami
+$ update-amis ami-b6cca686
 ```
 
 ## Caveats
