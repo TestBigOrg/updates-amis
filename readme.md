@@ -5,7 +5,7 @@ up-to-date image ids that share the same attributes (architecture, virtualizatio
 
 ## Setup
 ```sh
-$ npm install -g
+$ npm install -g update-amis
 ```
 
 Make sure that your environment is configured with appropriate AWS credentials.
