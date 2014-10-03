@@ -1,13 +1,11 @@
 {
   "name": "update-amis",
-  "version": "0.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.1",
+  "description": "Find up-to-date AMIs for Ubuntu",
   "bin": {
-    "update-amis": "bin/amis.js"
+    "update-amis": "bin/update-amis.js"
   },
+  "main": "index.js",
   "author": "Mapbox",
   "license": "ISC",
   "dependencies": {

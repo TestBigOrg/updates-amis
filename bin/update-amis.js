@@ -3,7 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var through2 = require('through2');
-var finder = require('../finder');
+var finder = require('..');
 var queue = require('queue-async');
 var _ = require('underscore');
 
