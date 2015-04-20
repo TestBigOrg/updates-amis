@@ -1,6 +1,6 @@
 {
   "name": "update-amis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find up-to-date AMIs for Ubuntu",
   "bin": {
     "update-amis": "bin/update-amis.js"
