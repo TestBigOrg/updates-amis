@@ -13,6 +13,7 @@ function Finder() {
             'ap-southeast-2',
             // 'cn-north-1', authentication failure
             'eu-west-1',
+            'eu-central-1',
             'sa-east-1',
             'us-east-1',
             // 'us-gov-west-1', authentication failure
