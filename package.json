@@ -1,5 +1,5 @@
 {
-  "name": "update-amis",
+  "name": "@mapbox/update-amis",
   "version": "0.0.2",
   "description": "Find up-to-date AMIs for Ubuntu",
   "bin": {
